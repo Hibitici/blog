@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+      <meta charant="Utf-8">
+<title>
+	</title>
 </head>
 <body>
 
 <?php 
    
-    require_once("controler/create-db.php");
+    require_once(__DIR__ . "/controler/create-db.php");
 
 ?>
 <body>
