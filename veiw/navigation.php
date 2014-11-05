@@ -5,7 +5,7 @@
     ?>
    <nav>
         <ul>       <!--  the easyest way to do this part is the code below -->
-       	   <li><a href="<?php echo $path . "post.php"?>">blog post form</a>    </li>>
+       	   <li><a href="<?php echo $path . "post.php"?>">blog post form</a>    </li>
        </ul>   
 </nav>
 <!-- the only thing that shoudve changed is the code saying the path -->
