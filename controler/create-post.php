@@ -1,5 +1,6 @@
 <?php 
- //this code is used to make it so people cannot hack the website 
+ // this code is used to make it so people cannot hack the website 
+        // we need to use this page to send my code to our form 
      $title = filter_input(INPUT_POST,"title", FILTER_SANITIZE_STRING);
      $post = filter_input(INPUT_POST,"post", FILTER_SANITIZE_STRING) ;
 //well echo this out to then see if we have filterd our code well
