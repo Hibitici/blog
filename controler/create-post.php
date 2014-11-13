@@ -11,8 +11,8 @@
      $post = filter_input(INPUT_POST,"post", FILTER_SANITIZE_STRING) ;
 //well echo this out to then see if we have filterd our code well
     
-
-   $query = $connection->query ("INSERT INTO posts SET title = '$title, post = '$post'");
+    //we need to make our query and use it to post our blog post on out post eres
+   $query = $connection->query("INSERT INTO posts SET title =  '$title', post = '$post'");
     //this outputs our code to show us if we have done this correctly
      if ($query) {
      	echo "<p>succefully inserted post $title</P>";
