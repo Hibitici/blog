@@ -2,7 +2,7 @@
  // this code is used to make it so people cannot hack the website 
         // we need to use this page to send my code to our form 
    // once we know what dirrectory we are in we can get out of it and require anohte file
-    require_once(__DIR__ . "/../model/database.php");
+    require_once(__DIR__ . "/../model/config.php");
 //the reason we have our mysql is so we can have a connection 
      
      $connection = new mysqli($host, $username, $pasword, $database);
