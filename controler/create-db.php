@@ -8,6 +8,7 @@
  }
     $exists = $connection->select_db($database);
        //if the database doesnt exist it will output succesfully created datebase.
+  
    if(!$exists)  {
           $query = $connection->query("CREATE DATABASE $database");
               if ($query) {
