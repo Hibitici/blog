@@ -12,7 +12,23 @@ class Database{
            $this->pasword = $pasword;
            $this->database = $database;
       }
-}//so we assing the information to the global information 
+//these functions will look exactly like the ones in create-db
+       public function openConnection() {
+
+       }
+    public function closeConnection() {
+
+    }
+
+    public function query($string) {
+
+    }
+}
+
+//waht weve done is create a function to open a connection
+
+//our queryy wil lbe very simular to waht we have done before 
+//so we assing the information to the global information 
 
 //we wnt to store our local information into our global info
 
