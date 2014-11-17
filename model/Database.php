@@ -12,7 +12,7 @@ class Database{
            $this->pasword = $pasword;
            $this->database = $database;
       }
-//these functions will look exactly like the ones in create-db
+//these functions will look exactly like the ones in create-db.php
        public function openConnection() {
 
        }
