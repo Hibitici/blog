@@ -5,10 +5,27 @@ class Database{
 	 private $username;
 	 private $pasword;
 	 private $database;
-}
+     
+      public function __construct($host, $username, $pasword, $database ) {
+           $this->host = $host;
+           $this->username = $username;
+           $this->pasword = $pasword;
+           $this->database = $database;
+      }
+}//so we assing the information to the global information 
+
+//we wnt to store our local information into our global info
+
+
+
+
+
+
+
 //what we want to do is make variables and clases in the variables 
 
-//  we use clases because classes are isolated code from everything else witch makes it easyer to move them arround 
+//  we use clases because using only functions in your code sooner or later leads to spaghetti-code that is hard to maintain and extend. It's harder to fix bugs 
+
 // classes are a way to view your code in a more intuitive, real-world way. (You package the data and all possible operations on that data together) 
 
 
