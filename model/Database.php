@@ -8,19 +8,26 @@ class Database{
      
       public function __construct($host, $username, $pasword, $database ) {
            $this->host = $host;
-           $this->username = $username;
+           $this->username = $username;s
            $this->pasword = $pasword;
            $this->database = $database;
       }
 //these functions will look exactly like the ones in create-db.php
+       
        public function openConnection() {
-
+          $this->connection = new mysqli($thiis->host, $this->username, $this->pasword, $this->database);  
+      //all open connection needs to do is make a mysqli object 
+     if($this->connection->connect_error) {
+        die("<p>error: " . $this->connection->connect_error . "</p>");
        }
-    public function closeConnection() {
+    }
+    //we are checking if we have a connection error
+   //the code is here because we are using it to see if we are going to have an error
+       public function closeConnection() {
 
     }
 
-    public function query($string) {
+        public function query($string) {
 
     }
 }
