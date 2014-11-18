@@ -24,9 +24,11 @@ class Database{
     //we are checking if we have a connection error
    //the code is here because we are using it to see if we are going to have an error
        public function closeConnection() {
-
+           if (isset($this->connection)) {
+           	   $this->connection->close();
+           }
     }
-
+//this is our close function it closes our connection^^^^^^ 
         public function query($string) {
 
     }
