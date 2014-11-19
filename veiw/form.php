@@ -18,7 +18,7 @@
 	</div>
 
 	<div>
-		<button type="submit">submit to the ogre lord shrek</button>
+		<button type="submit">submit to my blogk</button>
 	</div>
 </form>      
 <!--wee need to submit this code submit button to our code -->

@@ -30,9 +30,19 @@ class Database{
     }
 //this is our close function it closes our connection^^^^^^ 
         public function query($string) {
+         $this->openConnection();
 
-    }
-}
+         $query = $this->connection->query($string);
+    
+         $this->closeConnection();
+
+         return $query;
+    }  
+    //this will substitute our text and place it here ^^
+}      //once we get a result it will be stored in the query
+
+
+
 
 //waht weve done is create a function to open a connection
 

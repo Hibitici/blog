@@ -7,8 +7,10 @@
     <head>
       <meta charant="Utf-8">
 
-<title></title>
+<title>WELCOME TO MY BLOG POST HAVE A GREAT DAY </title>
 </head>
 <body>
-	
+	<h1>
+		hello welcome to my blog post!!
+	</h1>
 </body>
