@@ -1,14 +1,14 @@
 <?php
-    $path = "/blog/";
+     require_once (__DIR__ . "/database.php");
+     
+     $path = "/blog/";
     //^sets the path for project
-    $host = "localhost";
-    $username = "root";  
-    $pasword = "root";
-    $database = "blog_db";
+     $host = "localhost";
+     $username = "root";  
+     $pasword = "root";
+     $database = "blog_db";
       
-
-    $connection new Database($host, $username, $pasword, $database);
-
+    $connection = new Database($host, $username, $pasword, $database);
 
 //anytme we want to use configurtio0n we use this file instead of database .php
 

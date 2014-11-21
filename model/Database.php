@@ -5,17 +5,45 @@ class Database{
 	 private $username;
 	 private $pasword;
 	 private $database;
-     
+     public $error;
+
       public function __construct($host, $username, $pasword, $database ) {
            $this->host = $host;
-           $this->username = $username;s
+           $this->username = $username;
            $this->pasword = $pasword;
            $this->database = $database;
-      }
+
+           $this->connection = new mysqli($host, $username, $pasword);
+
+     if ($this->connection->connect_error) {
+        die("<p>error: " . $this->connection->connect_error . "</p>");
+ }
+             $exists = $this->connection->select_db($database);
+
+//^^the query here is figuring out if it actualy works
+    if(!$exists)  {
+       $query = $this->connection->query("CREATE DATABASE $database");
+                if ($query) {
+       echo "<p>succesfully created database:" . $database . "</P>";
+        }
+    }
+        
+    else {
+        echo "<p>database already exists.</P>";
+      } 
+     
+   }
+            
+     
+       
+
+       //if the database doesnt exist it will output succesfully created datebase.
+  
+
 //these functions will look exactly like the ones in create-db.php
        
        public function openConnection() {
-          $this->connection = new mysqli($thiis->host, $this->username, $this->pasword, $this->database);  
+          $this->connection = new mysqli($this->host, $this->username, $this->pasword, $this->database);  
       //all open connection needs to do is make a mysqli object 
      if($this->connection->connect_error) {
         die("<p>error: " . $this->connection->connect_error . "</p>");
@@ -33,10 +61,15 @@ class Database{
          $this->openConnection();
 
          $query = $this->connection->query($string);
+
+         if(!$query) {
+              $this->error = $this->connection->error;
+         }
     
          $this->closeConnection();
 
          return $query;
+    
     }  
     //this will substitute our text and place it here ^^
 }      //once we get a result it will be stored in the query

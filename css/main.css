@@ -3,11 +3,16 @@ body{
     color:orange  ;
     
 } 
- @media screen and(min-width: 768px){
-  } 
-     
 
+@media (min-width: 320px) and (max-width: 480px) {
+   html,body{
+   	      background-color: red;
+   }
+}
 
-  @media screen and(min-height: 1024px){
+@media (min-width: 768px) and (max-width: 1024px){
+   html,body{
+   	     background-image: url(http://2.bp.blogspot.com/-p6249VAqnmk/TnCMXNVxAUI/AAAAAAAAA5M/lrUWMWu2CbA/s1600/Background%2B9.jpg);
+   }
 
-{
+}
