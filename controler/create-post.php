@@ -15,7 +15,7 @@
  //well echo this out to then see if we have filterd our code well
 //we need to make our query and use it to post our blog post on out post eres
    
-   $query = $connection->query("INSERT INTO posts SET title =  '$title', post = '$post'");
+   $query = $_SESSION["connection"]->query("INSERT INTO posts SET title =  '$title', post = '$post'");
    
     //this outputs our code to show us if we have done this correctly
     
@@ -23,7 +23,7 @@
      	echo "<p>succefully inserted post $title</P>";
      } 
      else{
-     	echo "<p>$connection->error</p>";
+     	echo "<p>" . $_SESSION["connection"]->error . "</p>";
      }
 
 
