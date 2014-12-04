@@ -11,7 +11,8 @@
 
      $title = filter_input(INPUT_POST,"title", FILTER_SANITIZE_STRING);
      $post = filter_input(INPUT_POST,"post", FILTER_SANITIZE_STRING) ;
-
+     $date = new DateTime('today');
+     $time = new DateTime('America/Los_Angeles');
  //well echo this out to then see if we have filterd our code well
 //we need to make our query and use it to post our blog post on out post eres
    
@@ -20,7 +21,8 @@
     //this outputs our code to show us if we have done this correctly
     
      if ($query) {
-     	echo "<p>succefully inserted post $title</P>";
+     	echo "<p></P>";
+        echo "Posted on:" . $date->format("M/D" . " " . "d/Y") . " at " . $time->format("h:i");
      } 
      else{
      	echo "<p>" . $_SESSION["connection"]->error . "</p>";

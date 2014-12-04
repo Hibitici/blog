@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="">
 
-<h1>"The moment you doubt whether you can fly, you cease for ever to be able to do it." <small>- J.M. Barrie</small></h1>
+
     <head>
       <meta charant="Utf-8">
 

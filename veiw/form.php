@@ -2,7 +2,7 @@
      require_once(__DIR__ . "/../model/config.php");
 ?>
 
-<h1>Create Blog Post</h1>
+
 <!-- using this method will let us send stuff to our form -->
 <!-- when we hit the submit button it will echo out our tilte and our form -->
 <form method="post" action="<?php echo $path . "controler/create-post.php"; ?>">
