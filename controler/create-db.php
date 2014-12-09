@@ -13,13 +13,7 @@ $query = $_SESSION["connection"]->query("CREATE TABLE posts ("
           
  
 
- if($query) {
-           echo "<p>succesfully created post thatnk you for submiting </p>";
 
- }
-  else {
-       echo "<p>" . $_SESSION["connection"]->error . "</p>";
-}
 
 $query = $_SESSION["connection"]->query("CREATE TABLE users ("
 	. "id int(11) NOT NULL AUTO_INCREMENT,"
