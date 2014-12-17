@@ -3,7 +3,6 @@
 <html>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-
     <head>
       <meta charant="Utf-8">
 
@@ -12,7 +11,9 @@
 </head>
 <body>
 	
-	<h1>
+	<h2>
 		hello welcome to my blog post!!
-	</h1>
+	</h2>
+       <marquee onMouseover=”this.scrollAmount=3″ onMouseout=”this.scrollAmount=3″ height=”34″ width=”713″><img src="">  </marquee>
+
 </body>

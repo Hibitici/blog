@@ -5,7 +5,13 @@
     ?>
    <nav>
         <ul>       <!--  the easyest way to do this part is the code below -->
-       	   <li><a href="<?php echo $path . "post.php"?>">blog post form</a>    </li>
+       	   <li> <button><a href="<?php echo $path . "post.php"?>">blog post form </a></button>  </li>
+       </ul>   
+</nav>
+
+  <nav>
+        <ul>       <!-- this code makes a button -->
+       	   <li> <button><a href="<?php echo $path . "register.php"?>">register form </a></button>   </li>
        </ul>   
 </nav>
 <!-- the only thing that shoudve changed is the code saying the path -->

@@ -23,9 +23,11 @@ body {
 
 h1 {
   font-family:'Chango';
-  font-size:50px;  
+  font-size:60px;  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+body{
+  text-align:center;
+  background-color:#f2f2f2;
 }
